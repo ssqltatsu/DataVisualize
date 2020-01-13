@@ -11,10 +11,8 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 - 本システムの導入
  1. 右上のgit Clone or Downloadボタンからダウンロード
  1. zipファイルを解凍
- 1. 
- - Mac: 解凍したディレクトリ(DataVisualize-master)内のSuperSQL3DVS_for_Macを一度別のディレクトリに移動して, 同じディレクトリ内に戻してください。(これをしないと, ssql.propertiesを読み込んでくれません)  
- その後, SuperSQL3DVS_for_Macを実行(ダブルクリック)  
- - Windows: SuperSQL3DVS_for_Winディレクトリ内のNew Unity Project.exeを実行(ダブルクリック)  
+ 1. - Mac: 解凍したディレクトリ(DataVisualize-master)内のSuperSQL3DVS_for_Macを一度別のディレクトリに移動して, 同じディレクトリ内に戻してください。(これをしないと, ssql.propertiesを読み込んでくれません)  
+ その後, SuperSQL3DVS_for_Macを実行(ダブルクリック)  - Windows: SuperSQL3DVS_for_Winディレクトリ内のNew Unity Project.exeを実行(ダブルクリック)  
 注意がでるので、すべて展開を選択  
 展開終了後, NewUnityProject.exeをダブルクリック 
 <img width="609" alt="スクリーンショット 2020-01-13 16 34 53" src="https://user-images.githubusercontent.com/25918044/72239066-173f4880-3623-11ea-94ae-888c02e9cb67.png">
