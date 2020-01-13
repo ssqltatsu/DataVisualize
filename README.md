@@ -25,17 +25,22 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 ## 作業手順
 最初に数分, 一通りの操作を実行して感覚を掴んでください。操作説明は次節に示します。  
 [アンケートページ](https://forms.gle/WKw6FJcDCpmy923z9)を開き, 問題を解くたびにアンケートに結果を記入してください。  
-
+### 手順1  
 - 右上のプルダウンでQuestionを選択 → Question1~10が表示される
 - Question1を選択する → 問題とタイマーが表示される
 - 準備ができたらStartを押して, 探索を開始
 - 答えが分かった時点でStopを押し, アンケートページへ
-<img width="885" alt="スクリーンショット 2020-01-13 16 59 58" src="https://user-images.githubusercontent.com/25918044/72240037-34294b00-3626-11ea-8a7e-1c3f368bd7ae.png">
+<img width="885" alt="スクリーンショット 2020-01-13 16 59 58" src="https://user-images.githubusercontent.com/25918044/72240037-34294b00-3626-11ea-8a7e-1c3f368bd7ae.png">  
 - アンケートに答えと表示されている時間を記入
-<img width="801" alt="スクリーンショット 2020-01-13 17 04 10" src="https://user-images.githubusercontent.com/25918044/72240210-c7628080-3626-11ea-9da2-f4f81ef11b84.png">
-- Question2を選択 
-- 準備ができたらStartを押す(Startを押すと自動でタイマーはリセットされます)
-- これをQuestion10まで行う。
+<img width="801" alt="スクリーンショット 2020-01-13 17 04 10" src="https://user-images.githubusercontent.com/25918044/72240210-c7628080-3626-11ea-9da2-f4f81ef11b84.png">  
+- Question2を選択  
+- 準備ができたらStartを押す(Startを押すと自動でタイマーはリセットされます)  
+- これをQuestion10まで行う。  
+### 手順2  
+ 次に別のシーンを使用する.
+ - ssql.propertiesを開き, basic.xml -> rayout.xmlに書き換えて保存
+ <img width="610" alt="スクリーンショット 2020-01-13 17 21 59" src="https://user-images.githubusercontent.com/25918044/72241181-83bd4600-3629-11ea-8f38-3417743136f7.png">  
+ - SuperSQL3DVS_for_Macを起動(起動に数十秒かかります. 少々お待ちください)
 
 ## 操作説明  
 **移動**  
