@@ -20,7 +20,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
  <img width="609" alt="スクリーンショット 2020-01-13 16 34 53" src="https://user-images.githubusercontent.com/25918044/72239066-173f4880-3623-11ea-94ae-888c02e9cb67.png">
  
 
-1. config画面が開くので, 設定してPlay!ボタンをクリックで開始されます(おすすめ Resolution: 1152*720, Graphics: Low)  
+4. config画面が開くので, 設定してPlay!ボタンをクリックで開始されます(おすすめ Resolution: 1152*720, Graphics: Low)  
  <img width="481" alt="スクリーンショット 2020-01-13 16 44 07" src="https://user-images.githubusercontent.com/25918044/72239456-7a7daa80-3624-11ea-8438-c57e137085d9.png">
 
 *終了ボタンがないので, WindowsはAlt+F4で終了してください.
