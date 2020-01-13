@@ -22,14 +22,15 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 
 *終了ボタンがないので, WindowsはAlt+F4で終了してください.
 
-- 起動
- 1. Unityの画面が開いたら、▷(スタート)ボタンをクリックで開始
- <img width="866" alt="スクリーンショット 2020-01-08 19 22 21" src="https://user-images.githubusercontent.com/25918044/71970561-45e8a800-324c-11ea-9ba5-5d3cc485655b.png">
-
 ## 作業手順
-最初に数分, 一通りの操作を実行して感覚を掴んでください。操作説明は次に示してあります。
-[アンケートページ](https://forms.gle/WKw6FJcDCpmy923z9)を開き, 問題を解くたびにアンケートに結果を記入してください。
+最初に数分, 一通りの操作を実行して感覚を掴んでください。操作説明は次節に示します。  
+[アンケートページ](https://forms.gle/WKw6FJcDCpmy923z9)を開き, 問題を解くたびにアンケートに結果を記入してください。  
 
+<img width="885" alt="スクリーンショット 2020-01-13 16 59 58" src="https://user-images.githubusercontent.com/25918044/72240037-34294b00-3626-11ea-8a7e-1c3f368bd7ae.png">
+- 上図の手順で問題を解いたら, アンケートに答えと表示されている時間を記入してください。  
+その後、２問目に取り組んでください。
+<img width="801" alt="スクリーンショット 2020-01-13 17 04 10" src="https://user-images.githubusercontent.com/25918044/72240210-c7628080-3626-11ea-9da2-f4f81ef11b84.png">
+- これをQuestion10まで行う。
 
 ## 操作説明  
 **移動**  
