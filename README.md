@@ -26,6 +26,10 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
  1. Unityの画面が開いたら、▷(スタート)ボタンをクリックで開始
  <img width="866" alt="スクリーンショット 2020-01-08 19 22 21" src="https://user-images.githubusercontent.com/25918044/71970561-45e8a800-324c-11ea-9ba5-5d3cc485655b.png">
 
+## 作業手順
+最初に数分, 一通りの操作を実行して感覚を掴んでください。操作説明は
+[アンケートページ](https://forms.gle/WKw6FJcDCpmy923z9)を開き, 問題を解くたびにアンケートに結果を記入してください。
+
 
 ## 操作説明  
 **移動**  
