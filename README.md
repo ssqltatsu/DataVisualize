@@ -74,6 +74,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 
 ## クエリ2(rayout.ssql)
 ```
+------時間配置------
 [null(c.name),
 	[null((asc)c.day),Object("text", c.day || "日", 10),
 		color_gradient(
@@ -86,7 +87,9 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 	]#
 		!Object("text",c.name,10)
 ],
+------時間配置------
 ,
+------円配置------
 [null(c.name),
 	[null((asc)c.day),
 		color_gradient(
@@ -97,7 +100,9 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 	]◯
 	!object("text", c.name, 50)
 ]%@{margin=200}
+------円配置------
 ,
+------日本地図配置------
 [null((asc)c.day),
 	[position({move(object("text", c.day || "日", 10), c.longitude*80 -5030, c.day * 300, c.latitude*80),
 			move(
@@ -116,6 +121,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 		)}, 0, 0, 0
 	)]!
 ]%
+------日本地図配置------
 from cities c 
 where c.year = 2018 and c.month = 8
 ```
