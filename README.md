@@ -55,65 +55,97 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 - 画面右上プルダウンをクリックすると, フィルターとカメラボタンが利用できます。questionsを押すと, 10個の問題が見えます。
 <img width="889" alt="スクリーンショット 2020-01-08 18 35 09" src="https://user-images.githubusercontent.com/25918044/71966866-b50ece00-3245-11ea-8b66-93b978690523.png">
 
-## クエリ1
+## クエリ1(basic.ssql)
 ```
-generate Unity_dv  
-[null(c.name),  
-	[null((asc)c.day),
-		Object("text", c.day, 10),  
-			color_gradient(  
-				rotate(
-					filter(
-						asset("Windmill", c.population/5000), c.name@{name="windmill_cityname"}, "checkbox"
-					), 0, 0, c.wind * 10
-				)@{target="Fan"}, "blue", min[c.temperature], "red", max[c.temperature], c.temperature  
-			)  
-	]#  
-	!Object("text",c.name,10)  
-],  
-%  
-[null(c.name),  
-	[null((asc)c.day),  
-		color_gradient(  
-			hop(
-				scene(
-					filter(
-						Object("sphere", c.population/5000), c.name@{name="circle_cityname"}, "checkbox"
-					), "wind", c.id
-				),  
-				1, c.rain, "y"  
-			), "blue", min[c.temperature], "red", max[c.temperature], c.temperature  
-		)  
-	]◯  
-	!object("text", c.name, 50)  
-]%@{margin=200}  
-,  
-[null((asc)c.day),  
-	[position(
-		move(
-			move({object("text", c.name, 5)!
+[null((asc)c.year),Object("text", c.year || "年", 10),
+	[null((asc)c.month),Object("text", c.month || "月", 10),
+		[null((asc)c.day),Object("text", c.day || "日", 10),
+			[null(c.name),
 				color_gradient(
-					move(
-						scene(
-							filter(
-								object("sphere", c.population/10000), c.name@{name="map_cityname"}, "checkbox"
-							), "wind", c.id
-						), 0, c.population/10000, 0
-					), "blue", min[c.temperature], "red",33.7,c.temperature
-				)}, 0, c.day * 300, 0
-			), c.longitude * 40, 0, c.latitude * 40
-		), 0, 0, 0
-	)]!  
-]%  
-from cities c where c.year = 2018 and c.month =8  
+					rotate(
+						asset("Windmill", c.population/5000), 0, 0, c.wind * 10
+					)@{target="Fan"}, "blue", 14.1, "red", 33.7, c.temperature
+				)! Object("text",c.name,10)
+			],@{margin = 50}
+		]%@{margin = 100}
+	]!@{margin = 300}
+]%@{margin = 300}
 ```
-## クエリ2
+
+## クエリ2(rayout.ssql)
+```
+[null(c.name),
+	[null((asc)c.day),Object("text", c.day || "日", 10),
+		color_gradient(
+			rotate(
+				scene(
+						asset("Windmill", c.population/5000), "wind", c.id
+				), 0, 0, c.wind * 10
+			)@{target="Fan"} ,"blue", 14.1, "red", 33.7, c.temperature
+		)
+	]#
+		!Object("text",c.name,10)
+],
+,
+[null(c.name),
+	[null((asc)c.day),
+		color_gradient(
+				scene(
+					object("sphere", c.population/5000), "wind", c.id
+				), "blue", 14.1, "red", 33.7, c.temperature
+		)
+	]◯
+	!object("text", c.name, 50)
+]%@{margin=200}
+,
+[null((asc)c.day),
+	[position({move(object("text", c.day || "日", 10), c.longitude*80 -5030, c.day * 300, c.latitude*80),
+			move(
+				move({object("text", c.name, 5)
+					!
+					color_gradient(
+						move(
+							rotate(
+								scene(
+									asset("Windmill", c.population/5000), "wind", c.id
+								), 0, 0, c.wind * 10
+							)@{target="Fan"}, 0, c.population/5000, 0
+						), "blue",14.1,"red",33.7,c.temperature
+					)}, 0, c.day * 300, 0
+				), c.longitude * 80 - 5000, 0, c.latitude * 80
+		)}, 0, 0, 0
+	)]!
+]%
+from cities c 
+where c.year = 2018 and c.month = 8
+```
+
+## クエリ3(filter.ssql)
+```
+[null((asc)c.day),Object("text", c.day || "日", 10),
+	[null(c.name),
+		color_gradient(
+			rotate(
+				filter(
+					filter(
+						scene(
+							asset("Windmill", c.population/5000), "wind", c.id
+						), c.wind@{name="wind"}, "slider"
+					), c.temperature@{name="temperature"}, "slider"
+				), 0, 0, c.wind * 10
+			)@{target="Fan"}, "blue", 14.1, "red", 33.7, c.temperature
+		)!Object("text",c.name,10)
+	],@{margin = 50}
+]%@{margin=100}
+```
+
+## クエリ4(wind.ssql)
 ```
 foreach c.id
 generate Unity_dv
-[Object("text", c.year, 10),
-	[Object("text", c.month || "月", 10), 
-		[null((asc)c.day), Object("text", c.day, 10), 
+[null((asc)c.year),Object("text", c.year || "年", 10),
+	[null((asc)c.month),Object("text", c.month || "月", 10), 
+		[null((asc)c.day), Object("text", c.day || "日", 10), 
 			color_gradient(
 				rotate(asset("Windmill", c.population/5000), 0, 0, c.wind * 10)@{target="Fan"},
 				"blue", 14.1, "red", 33.7, c.temperature
