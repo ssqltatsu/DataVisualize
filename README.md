@@ -5,6 +5,8 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 
 ＊今回はデモ用のものなので, 事前にSuperSQLクエリから作成されたファイルを用いたデータ可視化を体験するものとなっている.
 
+[アンケートページ](https://forms.gle/WKw6FJcDCpmy923z9)
+
 ## 導入手順
 - Unityのダウンロード  
  1. [Unity Hubダウンロードサイト](https://unity3d.com/jp/get-unity/download)からUnity Hubをダウンロード  
