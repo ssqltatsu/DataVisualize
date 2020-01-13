@@ -11,10 +11,13 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 - 本システムの導入
  1. 右上のgit Clone or Downloadボタンからダウンロード
  1. zipファイルを解凍
- 1. Unity Hubを開き、プロジェクトからリストに追加を選択
- 1. ダウンロードしてきたプロジェクト(ディレクトリ)を開く(DataVisualization-master)
- 1. 追加したプロジェクトを開く(最初は開くまでに時間がかかります。おやつを用意して気長にお待ちください)
- <img width="722" alt="スクリーンショット 2020-01-08 19 18 54" src="https://user-images.githubusercontent.com/25918044/71970310-c8bd3300-324b-11ea-853a-7fe9edc8b86a.png">
+ 1. - Mac: 解凍したディレクトリ(DataVisualize-master)内のSuperSQL3DVS_for_Macを一度別のディレクトリに移動して, 同じディレクトリ内に戻してください。(これをしないと, ssql.propertiesを読み込んでくれません)  
+ その後, SuperSQL3DVS_for_Macを実行(ダブルクリック)  
+ - Windows: SuperSQL3DVS_for_Winディレクトリ内のNew Unity Project.exeを実行(ダブルクリック)  
+注意がでるので、すべて展開を選択  
+展開終了後, NewUnityProject.exeをダブルクリック  
+ 1. config画面が開くので, 設定してPlay!ボタンをクリックで開始されます(おすすめ Resolution: 1152*720, Graphics: Low)  
+*終了ボタンがないので, WindowsはAlt+F4で終了してください.
 
 - 起動
  1. Unityの画面が開いたら、▷(スタート)ボタンをクリックで開始
