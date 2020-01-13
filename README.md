@@ -51,6 +51,16 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 <img width="868" alt="スクリーンショット 2020-01-13 17 33 21" src="https://user-images.githubusercontent.com/25918044/72241848-3c37b980-362b-11ea-944e-23c6be537c73.png">
 <img width="869" alt="スクリーンショット 2020-01-13 17 32 56" src="https://user-images.githubusercontent.com/25918044/72241892-5e313c00-362b-11ea-8413-cce6ddef65ee.png">
 
+### 手順3
+ 次にfilter.xmlを使用する
+- 手順2と同様にssql.propertiesの中身をfilter.xmlに書き換えて保存
+- Question7,8をフィルター, Question9, 10をシーン遷移(オブジェクトをクリックして別のシーンへ移動すること *今回はwindのシーン)をして解いてください.
+
+### 手順4
+- 残りのアンケートにお答えください
+ 
+ ご協力, 誠に感謝いたします
+ 
 ## 操作説明  
 **移動**  
 キーボードの矢印で移動。  
