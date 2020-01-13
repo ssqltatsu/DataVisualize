@@ -8,12 +8,6 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 [アンケートページ](https://forms.gle/WKw6FJcDCpmy923z9)
 
 ## 導入手順
-- Unityのダウンロード  
- 1. [Unity Hubダウンロードサイト](https://unity3d.com/jp/get-unity/download)からUnity Hubをダウンロード  
- 1. 手順に従ってインストール  
- 1. Unity Hubのインストールから最新版のUnity(Unity 2019.2.17f1)をインストール(時間がかかります)  
- ![For Image](https://user-images.githubusercontent.com/25918044/71969894-eb028100-324a-11ea-975a-3ea3c91c2ba8.png)
-
 - 本システムの導入
  1. 右上のgit Clone or Downloadボタンからダウンロード
  1. zipファイルを解凍
@@ -27,7 +21,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
  <img width="866" alt="スクリーンショット 2020-01-08 19 22 21" src="https://user-images.githubusercontent.com/25918044/71970561-45e8a800-324c-11ea-9ba5-5d3cc485655b.png">
 
 ## 作業手順
-最初に数分, 一通りの操作を実行して感覚を掴んでください。操作説明は
+最初に数分, 一通りの操作を実行して感覚を掴んでください。操作説明は次に示してあります。
 [アンケートページ](https://forms.gle/WKw6FJcDCpmy923z9)を開き, 問題を解くたびにアンケートに結果を記入してください。
 
 
