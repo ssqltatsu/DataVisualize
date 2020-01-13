@@ -31,10 +31,10 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 - 準備ができたらStartを押して, 探索を開始
 - 答えが分かった時点でStopを押し, アンケートページへ
 <img width="885" alt="スクリーンショット 2020-01-13 16 59 58" src="https://user-images.githubusercontent.com/25918044/72240037-34294b00-3626-11ea-8a7e-1c3f368bd7ae.png">
-- 上図の手順で問題を解いたら, アンケートに答えと表示されている時間を記入。  
+- アンケートに答えと表示されている時間を記入
 <img width="801" alt="スクリーンショット 2020-01-13 17 04 10" src="https://user-images.githubusercontent.com/25918044/72240210-c7628080-3626-11ea-9da2-f4f81ef11b84.png">
 - Question2を選択 
-- 準備ができたらStartを
+- 準備ができたらStartを押す(Startを押すと自動でタイマーはリセットされます)
 - これをQuestion10まで行う。
 
 ## 操作説明  
@@ -66,6 +66,10 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 <img width="889" alt="スクリーンショット 2020-01-08 18 35 09" src="https://user-images.githubusercontent.com/25918044/71966866-b50ece00-3245-11ea-8b66-93b978690523.png">
 
 ## クエリ説明  
+- データに関して
+地名には東京をのぞいた, 46道府県の県庁所在地が入っている.
+風力, 気温は日付や市によって値が変わるが, 人口はどの日付でも同じ値(市によってのみ値が異なる). 
+
 - データ割り当て  
 	大きさ: 人口, 色: 気温, 風車の回転: 風力
 - 人口が多いほど大きい, 色が青いほど気温が低く、赤いほど気温が高い, 回転が早いほど風力が強い
