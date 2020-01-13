@@ -41,6 +41,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 
 - Question2を選択  
 - 準備ができたらStartを押す(Startを押すと自動でタイマーはリセットされます)  
+- 答えが分かったら答えと時間をアンケートに記入
 - これをQuestion10まで行う
 
 ### 手順2  
