@@ -64,7 +64,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 				color_gradient(
 					rotate(
 						asset("Windmill", c.population/5000), 0, 0, c.wind * 10
-					)@{target="Fan"}, "blue", 14.1, "red", 33.7, c.temperature
+					)@{target="Fan"}, "blue", min[c.temperature], "red", max[c.temperature], c.temperature
 				)! Object("text",c.name,10)
 			],@{margin = 50}
 		]%@{margin = 100}
@@ -82,7 +82,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 				scene(
 						asset("Windmill", c.population/5000), "wind", c.id
 				), 0, 0, c.wind * 10
-			)@{target="Fan"} ,"blue", 14.1, "red", 33.7, c.temperature
+			)@{target="Fan"} ,"blue", max[c.temperature], "red", max[c.temperature], c.temperature
 		)
 	]#
 		!Object("text",c.name,10)
@@ -95,7 +95,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 		color_gradient(
 				scene(
 					object("sphere", c.population/5000), "wind", c.id
-				), "blue", 14.1, "red", 33.7, c.temperature
+				), "blue", min[c.temperature], "red", max[c.temperature], c.temperature
 		)
 	]◯
 	!object("text", c.name, 50)
@@ -115,7 +115,7 @@ SuperSQLについては[SuperSQL](https://github.com/ToyamaLab/NewSSQL)を参照
 									asset("Windmill", c.population/5000), "wind", c.id
 								), 0, 0, c.wind * 10
 							)@{target="Fan"}, 0, c.population/5000, 0
-						), "blue",14.1,"red",33.7,c.temperature
+						), "blue",min[c.temperature],"red",max[c.temperature],c.temperature
 					)}, 0, c.day * 300, 0
 				), c.longitude * 80 - 5000, 0, c.latitude * 80
 		)}, 0, 0, 0
@@ -139,7 +139,7 @@ where c.year = 2018 and c.month = 8
 						), c.wind@{name="wind"}, "slider"
 					), c.temperature@{name="temperature"}, "slider"
 				), 0, 0, c.wind * 10
-			)@{target="Fan"}, "blue", 14.1, "red", 33.7, c.temperature
+			)@{target="Fan"}, "blue", min[c.temperature], "red", max[c.temperature], c.temperature
 		)!Object("text",c.name,10)
 	],@{margin = 50}
 ]%@{margin=100}
@@ -154,7 +154,7 @@ generate Unity_dv
 		[null((asc)c.day), Object("text", c.day || "日", 10), 
 			color_gradient(
 				rotate(asset("Windmill", c.population/5000), 0, 0, c.wind * 10)@{target="Fan"},
-				"blue", 14.1, "red", 33.7, c.temperature
+				"blue", min[c.temperature], "red", max[c.temperature], c.temperature
 			)
 		],
 	]!
@@ -165,5 +165,9 @@ from cities c
 ## クエリ説明  
 1つめのクエリ例では気温, 人口等の情報を同様のチャンネルへの割り当てを行なったオブジェクト群を３種類のレイアウトで可視化する.  
 
+-データ割り当て  
+	大きさ: 人口, 色: 気温, 風車の回転: 風力
+- 人口が多いほど大きい, 色が青いほど気温が低く、赤いほど気温が高い, 回転が早いほど風力が強い
+-クエリ2, 3ではオブジェクトクリックするとwind.ssqlにシーン遷移する
 ＊データは実験用の物です。実際の情報とは異なる物なのでご了承下さい。
 
