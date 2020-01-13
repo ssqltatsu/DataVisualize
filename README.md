@@ -95,6 +95,15 @@ SuperSQL3DVS_for_Winディレクトリ内のNew Unity Project.exeを実行(ダ�
 - 画面右上プルダウンをクリックすると, フィルターとカメラボタンが利用できます。questionsを押すと, 10個の問題が見えます。
 <img width="889" alt="スクリーンショット 2020-01-08 18 35 09" src="https://user-images.githubusercontent.com/25918044/71966866-b50ece00-3245-11ea-8b66-93b978690523.png">
 
+***フィルタリングに関して
+- Show List of Filter: 適用したフィルターの一覧が表示, RemoveFiltersでフィルターを外せる  
+- Equal:	=
+- Not Equal:	≠
+- Above:	> 
+- More than:	>= 
+- Below:	< 
+- Less than:	<= 
+
 ## クエリ説明  
 - データに関して
 地名には東京をのぞいた, 46道府県の県庁所在地が入っている.  
