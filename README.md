@@ -103,7 +103,7 @@ SuperSQL3DVS_for_Winディレクトリ内のNew Unity Project.exeを実行(ダ�
 - More than:	>= 
 - Below:	< 
 - Less than:	<=  
-**** filterはfilter.xmlでのみ使用できる(ssql.propertiesの中身をfilter.xmlに変更して試してみてください)
+filterはfilter.xmlでのみ使用できる(ssql.propertiesの中身をfilter.xmlに変更して試してみてください)
 
 ## クエリ説明  
 - データに関して
